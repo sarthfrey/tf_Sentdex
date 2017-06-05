@@ -15,4 +15,11 @@ print s2-s1
 print s3-s2
 '''
 
+result = tf.multiply(x1,x2)
+
+with tf.Session() as sess:
+	out = sess.run(result)
+	print out
+
+print out # error
 
